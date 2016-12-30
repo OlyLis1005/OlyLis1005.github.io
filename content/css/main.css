@@ -3,6 +3,19 @@
 雅 紫色  #7c509d
 主要字体 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 */
+.ol-navLink a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ol-navLink a:visited {
+    color: #fff;
+}
+
+.ol-navLink a:hover {
+    color: #ff0;
+}
+
 .ol-navbar-bg {
     position: absolute;
     width: 100%;
@@ -32,6 +45,7 @@
     font-size: 20px;
 }
 
+/* 欢迎横幅 */
 .welcome-header {
     height: 1030px;
     /*background-color: #f2f2f2;*/
@@ -127,4 +141,26 @@
 .to-top a:visited {
     color: #7c509d;
     text-decoration: none;
+}
+
+
+/* 暂定Story？ */
+.ol-story {
+    min-height: 300px;
+    background-color: #fff;
+}
+/* Skill */
+.ol-skill {
+    min-height: 300px;
+    background-color: #7c509d;
+}
+/* Exp */
+.ol-exp {
+    min-height: 300px;
+    background-color: #fff;
+}
+/* Contact */
+.ol-contact {
+    min-height: 300px;
+    background-color: #7c509d;
 }

@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="olylisBlog">
 <head>
     <meta charset="UTF-8">
     <title>OlyLis's Blog</title>
     <!-- 外部 -->
-
     <!-- 本地 -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="content/css/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="content/css/main.css">
+
+    <script type="text/javascript" src="js/angular/angular.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.controller.js"></script>
+
 </head>
 <body>
     <div class="ol-navbar-bg"></div>
-    <div class="ol-navbar" id="navbar">
+    <div class="ol-navbar">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -22,16 +27,32 @@
                         <div class="col-xs-6 col-xs-offset-4">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="ol-navLink">Story</div>
+                                    <div class="ol-navLink">
+                                        <a href="#ol_a1" ng-click="">
+                                            {{vm.test}}
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="ol-navLink">Skill</div>
+                                    <div class="ol-navLink">
+                                        <a href="#ol_a2">
+                                            Skill
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="ol-navLink">Exp</div>
+                                    <div class="ol-navLink">
+                                        <a href="#ol_a3">
+                                            Exp
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="ol-navLink">Contact</div>
+                                    <div class="ol-navLink">
+                                        <a href="#ol_a4">
+                                            Contact
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,11 +77,20 @@
             </div>
         </div>
     </div>
-    <div class="container">
-
+    <div class="ol-story ol-a1">
+        <a name="ol_a1"></a>
+    </div>
+    <div class="ol-skill ol-a2">
+        <a name="ol_a2"></a>
+    </div>
+    <div class="ol-exp ol-e3">
+        <a name="ol_a3"></a>
+    </div>
+    <div class="ol-contact ol-a4">
+        <a name="ol_a4"></a>
     </div>
     <div class="to-top">
-        <a href="#navbar">
+        <a href="#" onclick="scrollTop(0)">
             TOP<br/>
             <i class="glyphicon glyphicon-arrow-up"></i>
         </a>
