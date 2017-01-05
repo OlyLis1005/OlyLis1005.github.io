@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="olylisBlog">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>OlyLis's Blog</title>
@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="content/css/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="content/css/main.css">
 
-    <script type="text/javascript" src="js/angular/angular.js"></script>
-
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/app.controller.js"></script>
 
 </head>
 <body>
@@ -29,7 +26,7 @@
                                 <div class="col-md-3">
                                     <div class="ol-navLink">
                                         <a href="#ol_a1" ng-click="">
-                                            {{vm.test}}
+                                            Story
                                         </a>
                                     </div>
                                 </div>
@@ -77,20 +74,24 @@
             </div>
         </div>
     </div>
+    <a name="ol_a1"></a>
     <div class="ol-story ol-a1">
-        <a name="ol_a1"></a>
+        ol-story
     </div>
+    <a name="ol_a2"></a>
     <div class="ol-skill ol-a2">
-        <a name="ol_a2"></a>
+        ol-skill
     </div>
+    <a name="ol_a3"></a>
     <div class="ol-exp ol-e3">
-        <a name="ol_a3"></a>
+        ol-exp
     </div>
+    <a name="ol_a4"></a>
     <div class="ol-contact ol-a4">
-        <a name="ol_a4"></a>
+        ol-contact
     </div>
     <div class="to-top">
-        <a href="#" onclick="scrollTop(0)">
+        <a href="#" onclick="scrollTop">
             TOP<br/>
             <i class="glyphicon glyphicon-arrow-up"></i>
         </a>
