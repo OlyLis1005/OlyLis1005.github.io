@@ -3,6 +3,14 @@
 雅 紫色  #7c509d
 主要字体 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 */
+.scroll-navbar.isFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .nav > li {
     display: inline-block;
 }

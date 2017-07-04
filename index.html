@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="blogApp">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>OlyLis's Blog</title>
@@ -8,41 +8,18 @@
     <link rel="stylesheet" href="content/css/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="content/css/main.css">
 
-    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
 
     <script src="js/main.js"></script>
     <script src="js/app.module.js"></script>
+    <script src="layout/navbar/home-menu.directive.js"></script>
+    <script src="layout/navbar/home-menu.controller.js"></script>
 </head>
-<body>
+<body ng-app="blogApp">
     <!--导航栏-->
-    <div class="ol-navbar-bg">
-        <div class="ol-navbar">
-            <div class="container">
-                <div class="col-md-2">
-                    <div class="ol-name">OlyLis</div>
-                </div>
-                <div class="col-md-6 col-md-offset-4">
-                    <div class="navbar-right">
-                        <ul class="nav">
-                            <li class="ol-navLink">
-                                <a href="#ol_a1" data-hover="Story">Story</a>
-                            </li>
-                            <li class="ol-navLink">
-                                <a href="#ol_a2" data-hover="Skill">Skill</a>
-                            </li>
-                            <li class="ol-navLink">
-                                <a href="#ol_a3" data-hover="Exp">Exp</a>
-                            </li>
-                            <li class="ol-navLink">
-                                <a href="#ol_a4" data-hover="Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <home-menu></home-menu>
+
     <!--<div class="ol-navbar">-->
         <!--<div class="container">-->
             <!--<div class="row">-->
