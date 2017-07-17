@@ -11,12 +11,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/angular/angular.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/index.controller.js"></script>
     <script src="js/app.module.js"></script>
     <script src="layout/navbar/home-menu.directive.js"></script>
     <script src="layout/navbar/home-menu.controller.js"></script>
 </head>
-<body ng-app="blogApp">
+<body ng-app="blogApp" ng-controller="indexController">
     <!--导航栏-->
     <home-menu></home-menu>
     <!-- 欢迎横幅 -->
@@ -52,7 +52,7 @@
         ol-contact
     </div>
     <div class="to-top">
-        <a href="#" onclick="scrollTop">
+        <a href="#" ng-click="vm.scrollTop()">
             TOP<br/>
             <i class="glyphicon glyphicon-arrow-up"></i>
         </a>
